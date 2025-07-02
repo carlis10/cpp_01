@@ -1,8 +1,8 @@
-NAME = horde
+NAME = brain
 
-CC = c++
+CXX = c++
 
-CFLAGS = -Wall -Wextra -Werror -std=c++98
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
 RM = rm -f
 
@@ -13,7 +13,7 @@ OBJTS = $(SRCS:.cpp=.o)
 all: $(NAME)
 
 $(NAME): $(OBJTS)
-	$(CC) $(CFLAGS) $(OBJTS) -o $(NAME)
+	$(CXX) $(CXXFLAGS) $(OBJTS) -o $(NAME)
 
 clean:
 	$(RM) $(OBJTS)
